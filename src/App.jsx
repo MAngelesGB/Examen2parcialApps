@@ -47,10 +47,10 @@ function App() {
         <input type="text" value={value} onChange={handleChange} />
 
         <p>Palabras:{arrStr.length}</p>
-        <p>{arrStr.map((word, key) => (
+        {arrStr.map((word, key) => (
           <p key={key}>{word}:{word.length} repite:{repetir(word,arrStr)}</p>
           
-        ))}</p>
+        ))}
         
       </div>
       
